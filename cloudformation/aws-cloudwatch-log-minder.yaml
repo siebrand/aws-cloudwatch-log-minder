@@ -110,7 +110,7 @@ Resources:
     Properties:
       Name: aws-cloudwatch-set-log-retention
       Description: set log retention on log streams
-      ScheduleExpression: 'cron(0 * * * ? *)'
+      ScheduleExpression: 'cron(0 3 * * ? *)'
       State: ENABLED
       Targets:
         - Id: aws-cloudwatch-set-log-retention
