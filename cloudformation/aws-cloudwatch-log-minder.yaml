@@ -122,7 +122,7 @@ Resources:
     Properties:
       Name: aws-cloudwatch-delete-empty-log-streams
       Description: delete empty log streams
-      ScheduleExpression: 'cron(10 * * * ? *)'
+      ScheduleExpression: 'cron(10 3 * * ? *)'
       State: ENABLED
       Targets:
         - Id: aws-cloudwatch-delete-empty-log-streams
